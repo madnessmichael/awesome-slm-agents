@@ -55,8 +55,7 @@
         "Appendix B",
         "NeurIPS checklist: statistical significance"
       ],
-      "manuscript_sections_reviewed": true,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
       "metric": "Final-answer accuracy",
@@ -125,8 +124,7 @@
         "Tables 2–4 and 8",
         "Appendix B.1–B.2"
       ],
-      "manuscript_sections_reviewed": true,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
       "metric": "Success rate; environment score",
@@ -183,8 +181,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -245,8 +242,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -313,8 +309,7 @@
         "Tables 1–3",
         "Appendix B.3–B.4"
       ],
-      "manuscript_sections_reviewed": true,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
       "metric": "Benchmark-specific task success; Table 1 averages two runs",
@@ -377,8 +372,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -439,8 +433,7 @@
         "Tables 1–2",
         "Appendix E"
       ],
-      "manuscript_sections_reviewed": true,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
       "metric": "Completion rate, NRQ, latency, tokens/sample; not interchangeable",
@@ -515,8 +508,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -576,8 +568,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -644,8 +635,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -708,8 +698,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -779,8 +768,7 @@
         "Sections 3–4",
         "Tables 1–2"
       ],
-      "manuscript_sections_reviewed": true,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
       "metric": "Function-plan dependency graph success; 1K test examples (v1)",
@@ -863,8 +851,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -921,8 +908,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -997,8 +983,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1065,8 +1050,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1125,8 +1109,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1216,8 +1199,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1280,8 +1262,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1338,8 +1319,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1402,8 +1382,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1474,8 +1453,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1537,8 +1515,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1601,8 +1578,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -1660,8 +1636,7 @@
       "method": "AI-assisted comparison with primary arXiv landing page and abstract",
       "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
       "sections_reviewed": [],
-      "manuscript_sections_reviewed": false,
-      "human_reviewer": null
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,

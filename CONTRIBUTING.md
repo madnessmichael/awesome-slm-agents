@@ -12,4 +12,4 @@ Use null for information not established. Add source page/table and version for 
 
 AI assistance is permitted with disclosure, primary-source comparison, and accurate review labels. Maintainers remain responsible for acceptance. Do not present an AI-only review as human reading. A maintainer must inspect changes before merge; repository protection settings are not assumed to enforce this.
 
-Useful commands: `python3 scripts/render.py`, `python3 scripts/validate.py`, `python3 scripts/check_markdown.py`. A focused manuscript note must list reviewed sections, version and source locators; it does not qualify as an exhaustive full-text review. Link checking is a separate, non-blocking scheduled/manual job; temporary failures are review alerts, never automatic deletion.
+Useful commands: `python3 scripts/render.py`, `python3 scripts/validate.py`. Link checking is a separate, non-blocking scheduled/manual job; temporary failures are review alerts, never automatic deletion.
