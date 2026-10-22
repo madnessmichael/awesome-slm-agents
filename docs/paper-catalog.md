@@ -97,6 +97,28 @@ What belongs in weights, context, or external memory?
 - **Status:** arXiv.
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.
 
+### LightMem (ACL 2026)
+
+**[Lightweight LLM Agent Memory with Small Language Models](https://arxiv.org/abs/2604.07798)** — Jiaquan Zhang et al.; 2026-04-09. `core`
+
+- **Models:** Small models for memory operations; sizes not established from abstract.
+- **Contribution:** Uses small models for modular memory retrieval, writing, and offline long-term consolidation.
+- **Evidence:** Authors report LoCoMo F1 and retrieval/end-to-end latency under a fixed retrieval budget.
+- **Limitation:** Small memory-operation models do not establish that the full answering agent or every deployment component is small.
+- **Status:** [ACL 2026 Main Conference (Long Papers)](https://aclanthology.org/2026.acl-long.588/).
+- **Source review:** v3; metadata and abstract, checked 2026-10-22.
+
+### LightMem (ICLR 2026)
+
+**[LightMem: Lightweight and Efficient Memory-Augmented Generation](https://arxiv.org/abs/2510.18866)** — Jizhan Fang et al.; 2025-10-21. `supporting`
+
+- **Models:** GPT and Qwen backbones; not restricted to small models.
+- **Contribution:** Organizes memory into sensory, short-term, and long-term stages with offline consolidation.
+- **Evidence:** Authors evaluate memory accuracy and token, API-call, and runtime costs on LongMemEval.
+- **Limitation:** Efficient memory augmentation is supporting architecture evidence, not proof of an entirely small-model agent.
+- **Status:** [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/a05b72653ec5b473732129829ae04195-Abstract-Conference.html).
+- **Source review:** v4; metadata and abstract, checked 2026-10-22.
+
 ## Multi-Agent Collaboration
 
 When does communication justify its overhead?
@@ -122,6 +144,17 @@ When does communication justify its overhead?
 - **Limitation:** Inspect orchestrator size and matched inference budgets before crediting small workers.
 - **Status:** [ICLR 2026 · MALGAI Workshop](https://openreview.net/pdf?id=RLHUTcvsA9).
 - **Source review:** v2; metadata and abstract, checked 2026-10-22.
+
+### Latent-Lens
+
+**[Latent-Lens: Visual Perception in Small Language Models Through Latent Communication](https://neurips.cc/virtual/2026/loc/sydney/poster/155307)** — Mo Shahdloo et al.; first-publication date unverified. `supporting`
+
+- **Models:** TinyLlama-1.1B and InternVL2-1B example pairing; 1.6M trainable codec parameters.
+- **Contribution:** Connects a VLM and an SLM through a lightweight latent-state codec instead of text messages.
+- **Evidence:** The official abstract reports visual question answering and image captioning comparisons against text communication.
+- **Limitation:** Perception and communication results do not establish long-horizon agent task completion; first-publication date is not verified.
+- **Status:** [NeurIPS 2026 Poster](https://neurips.cc/virtual/2026/loc/sydney/poster/155307).
+- **Source review:** Official NeurIPS 2026 poster page; metadata and abstract, checked 2026-10-22.
 
 ## On-Device and Edge Deployment
 

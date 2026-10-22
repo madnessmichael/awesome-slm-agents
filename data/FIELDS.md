@@ -5,3 +5,5 @@
 Null or an empty list means **not established in the present review**, not absent in the original paper. All initial entries have metadata/abstract review only. `accepted_author_reported` is distinct from independently confirmed acceptance. `version_reviewed` identifies the landing-page version used for the abstract summary.
 
 The validator currently checks core structure, dates, uniqueness, selected enums, review-note requirements and generated catalog consistency. It is not a comprehensive JSON Schema or factual verifier.
+
+Conference-only entries may use a namespaced ID such as `neurips:2026:155307`. A null `first_published` means the first paper-publication date is unverified; a conference web-page date is not substituted. Such entries require a `date_note` and render without an invented date.

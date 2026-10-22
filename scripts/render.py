@@ -9,7 +9,7 @@ def groups():
     categories = json.loads((R/'data/taxonomy.json').read_text())
     for c in categories:
         subset = sorted((p for p in papers if p['primary_category'] == c['id']),
-                        key=lambda p: p['first_published'], reverse=True)
+                        key=lambda p: p['first_published'] or '', reverse=True)
         if subset:
             yield c, subset
 
@@ -29,7 +29,7 @@ def catalog():
     for c, papers in groups():
         out += [f"### {c['title']}", '']
         for p in papers:
-            out += [f"- **[{p['title']}]({p['source_url']})** ({p['first_published']} · {venue_label(p)}) — {p['contribution']}"]
+            out += [f"- **[{p['title']}]({p['source_url']})** ({(p['first_published'] + ' · ') if p['first_published'] else ''}{venue_label(p)}) — {p['contribution']}"]
         out += ['']
     return '\n'.join(out).rstrip()
 
@@ -43,7 +43,7 @@ def detailed_catalog():
         for p in papers:
             author = p['authors'][0] + (' et al.' if len(p['authors']) > 1 else '')
             out += [f"### {p['short_name']}", '',
-                    f"**[{p['title']}]({p['source_url']})** — {author}; {p['first_published']}. `{p['tier']}`", '',
+                    f"**[{p['title']}]({p['source_url']})** — {author}; {p['first_published'] or 'first-publication date unverified'}. `{p['tier']}`", '',
                     f"- **Models:** {p['model_size_summary']}.",
                     f"- **Contribution:** {p['contribution']}",
                     f"- **Evidence:** {p['evidence']}",

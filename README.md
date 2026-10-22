@@ -2,7 +2,7 @@
 
 A collection of papers on small language models for agentic systems: training, planning, memory, collaboration, and deployment.
 
-Focus: models up to **10B parameters**, with labeled exceptions. **11 papers** · Metadata and abstracts checked **2026-10-22** · AI-assisted summaries; no reproductions.
+Focus: models up to **10B parameters**, with labeled exceptions. **14 papers** · Metadata and abstracts checked **2026-10-22** · AI-assisted summaries; no reproductions.
 
 ## Contents
 
@@ -18,7 +18,7 @@ Focus: models up to **10B parameters**, with labeled exceptions. **11 papers** �
 
 ## Papers
 
-Newest first within each category. Dates refer to first publication; venue links identify the track or workshop. `arXiv` means no conference venue has been verified here. See the [detailed catalog](docs/paper-catalog.md) for model sizes, evidence, limitations, and publication status.
+Newest first within each category. Dates refer to first publication when verified; undated entries appear last. Venue links identify the track or workshop. `arXiv` means no conference venue has been verified here. See the [detailed catalog](docs/paper-catalog.md) for model sizes, evidence, limitations, and publication status.
 
 <!-- CATALOG:START -->
 
@@ -40,11 +40,14 @@ Newest first within each category. Dates refer to first publication; venue links
 ### Memory and Context Management
 
 - **[Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](https://arxiv.org/abs/2608.07169)** (2026-08-07 · arXiv) — Transfers teacher experience into workflow, subtask, and function memories without student weight updates.
+- **[Lightweight LLM Agent Memory with Small Language Models](https://arxiv.org/abs/2604.07798)** (2026-04-09 · [ACL 2026 Main Conference (Long Papers)](https://aclanthology.org/2026.acl-long.588/)) — Uses small models for modular memory retrieval, writing, and offline long-term consolidation.
+- **[LightMem: Lightweight and Efficient Memory-Augmented Generation](https://arxiv.org/abs/2510.18866)** (2025-10-21 · [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/a05b72653ec5b473732129829ae04195-Abstract-Conference.html)) — Organizes memory into sensory, short-term, and long-term stages with offline consolidation.
 
 ### Multi-Agent Collaboration
 
 - **[Reinforcement Learning of Communication in a Mesh of Small Language Models](https://arxiv.org/abs/2609.30578)** (2026-09-24 · arXiv) — Learns confidence-gated communication and decentralized revision.
 - **[Can Small Agents Collaborate to Beat a Single Large Language Model?](https://arxiv.org/abs/2601.11327)** (2026-01-16 · [ICLR 2026 · MALGAI Workshop](https://openreview.net/pdf?id=RLHUTcvsA9)) — Studies a central orchestrator with specialized workers and restricted communication.
+- **[Latent-Lens: Visual Perception in Small Language Models Through Latent Communication](https://neurips.cc/virtual/2026/loc/sydney/poster/155307)** ([NeurIPS 2026 Poster](https://neurips.cc/virtual/2026/loc/sydney/poster/155307)) — Connects a VLM and an SLM through a lightweight latent-state codec instead of text messages.
 
 ### On-Device and Edge Deployment
 

@@ -632,5 +632,195 @@
       "perspectives"
     ],
     "note": null
+  },
+  {
+    "id": "2510.18866",
+    "title": "LightMem: Lightweight and Efficient Memory-Augmented Generation",
+    "short_name": "LightMem (ICLR 2026)",
+    "authors": [
+      "Jizhan Fang",
+      "Xinle Deng",
+      "Haoming Xu",
+      "Ziyan Jiang",
+      "Yuqi Tang",
+      "Ziwen Xu",
+      "Shumin Deng",
+      "Yunzhi Yao",
+      "Mengru Wang",
+      "Shuofei Qiao",
+      "Huajun Chen",
+      "Ningyu Zhang"
+    ],
+    "first_published": "2025-10-21",
+    "last_revised": "2026-02-28",
+    "source_url": "https://arxiv.org/abs/2510.18866",
+    "version_reviewed": "v4",
+    "primary_category": "memory",
+    "tier": "supporting",
+    "model_size_summary": "GPT and Qwen backbones; not restricted to small models",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [
+      "LongMemEval"
+    ],
+    "resources": {
+      "code": "https://github.com/zjunlp/LightMem",
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "published",
+      "venue": "ICLR 2026",
+      "status_source": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/a05b72653ec5b473732129829ae04195-Abstract-Conference.html"
+    },
+    "contribution": "Organizes memory into sensory, short-term, and long-term stages with offline consolidation.",
+    "evidence": "Authors evaluate memory accuracy and token, API-call, and runtime costs on LongMemEval.",
+    "limitation": "Efficient memory augmentation is supporting architecture evidence, not proof of an entirely small-model agent.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv metadata and official conference abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "memory"
+    ],
+    "note": null
+  },
+  {
+    "id": "2604.07798",
+    "title": "Lightweight LLM Agent Memory with Small Language Models",
+    "short_name": "LightMem (ACL 2026)",
+    "authors": [
+      "Jiaquan Zhang",
+      "Chaoning Zhang",
+      "Shuxu Chen",
+      "Zhenzhen Huang",
+      "Pengcheng Zheng",
+      "Zhicheng Wang",
+      "Ping Guo",
+      "Fan Mo",
+      "Sung-Ho Bae",
+      "Jie Zou",
+      "Jiwei Wei",
+      "Yang Yang"
+    ],
+    "first_published": "2026-04-09",
+    "last_revised": "2026-04-22",
+    "source_url": "https://arxiv.org/abs/2604.07798",
+    "version_reviewed": "v3",
+    "primary_category": "memory",
+    "tier": "core",
+    "model_size_summary": "Small models for memory operations; sizes not established from abstract",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [
+      "LoCoMo"
+    ],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "published",
+      "venue": "ACL 2026 Main Conference (Long Papers)",
+      "status_source": "https://aclanthology.org/2026.acl-long.588/"
+    },
+    "contribution": "Uses small models for modular memory retrieval, writing, and offline long-term consolidation.",
+    "evidence": "Authors report LoCoMo F1 and retrieval/end-to-end latency under a fixed retrieval budget.",
+    "limitation": "Small memory-operation models do not establish that the full answering agent or every deployment component is small.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv metadata and official conference abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "memory"
+    ],
+    "note": null
+  },
+  {
+    "id": "neurips:2026:155307",
+    "title": "Latent-Lens: Visual Perception in Small Language Models Through Latent Communication",
+    "short_name": "Latent-Lens",
+    "authors": [
+      "Mo Shahdloo",
+      "Faegheh Sardari",
+      "Mathew Salvaris"
+    ],
+    "first_published": null,
+    "last_revised": null,
+    "source_url": "https://neurips.cc/virtual/2026/loc/sydney/poster/155307",
+    "version_reviewed": "Official NeurIPS 2026 poster page",
+    "primary_category": "collaboration",
+    "tier": "supporting",
+    "model_size_summary": "TinyLlama-1.1B and InternVL2-1B example pairing; 1.6M trainable codec parameters",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [
+      "CLEVR",
+      "GQA",
+      "Flickr8k"
+    ],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "accepted",
+      "venue": "NeurIPS 2026 Poster",
+      "status_source": "https://neurips.cc/virtual/2026/loc/sydney/poster/155307"
+    },
+    "contribution": "Connects a VLM and an SLM through a lightweight latent-state codec instead of text messages.",
+    "evidence": "The official abstract reports visual question answering and image captioning comparisons against text communication.",
+    "limitation": "Perception and communication results do not establish long-horizon agent task completion; first-publication date is not verified.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv metadata and official conference abstract; first publication date remains unknown for Latent-Lens."
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "collaboration"
+    ],
+    "note": null,
+    "openreview_id": "6ZXF2Ri4AQ",
+    "date_note": "The poster page has a page-publication date, which is not treated as the first paper-publication date."
   }
 ]
