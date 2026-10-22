@@ -1,0 +1,636 @@
+[
+  {
+    "id": "2610.19439",
+    "title": "Progress-Aware Distillation for Mitigating Stagnation in Small Language Model Agents",
+    "short_name": "ProD",
+    "authors": [
+      "Yuanpu Cao",
+      "Saket Sathe",
+      "Hanyu Wang",
+      "Ziyi Yin",
+      "Fenglong Ma",
+      "Jinghui Chen"
+    ],
+    "first_published": "2026-10-14",
+    "last_revised": "2026-10-17",
+    "source_url": "https://arxiv.org/abs/2610.19439",
+    "version_reviewed": "v2",
+    "primary_category": "recovery",
+    "tier": "core",
+    "model_size_summary": "0.6–8B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "accepted_author_reported",
+      "venue": "NeurIPS 2026 (arXiv author comment; proceedings not independently checked)",
+      "status_source": "https://arxiv.org/abs/2610.19439"
+    },
+    "contribution": "Detects stalled trajectories and uses an adaptive distillation penalty.",
+    "evidence": "Authors evaluate eight small models on in-domain and out-of-domain tasks.",
+    "limitation": "Abstract review cannot establish fair total compute or robustness in production.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "recovery"
+    ],
+    "note": null
+  },
+  {
+    "id": "2610.02858",
+    "title": "Harness-Aware Distillation for Small Language Model Agents",
+    "short_name": "HAD",
+    "authors": [
+      "Moonseok Choi",
+      "Taehong Moon",
+      "Giung Nam",
+      "Juho Lee"
+    ],
+    "first_published": "2026-10-02",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2610.02858",
+    "version_reviewed": "v1",
+    "primary_category": "training",
+    "tier": "core",
+    "model_size_summary": "Not established from abstract",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2610.02858"
+    },
+    "contribution": "Distills teacher actions conditioned on harness state and filters inconsistent preferences.",
+    "evidence": "Authors compare long-horizon agents with a fixed harness and report fewer unproductive loops.",
+    "limitation": "Model sizes, benchmark-level results, and teacher costs require full-text review.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "training"
+    ],
+    "note": null
+  },
+  {
+    "id": "2609.30578",
+    "title": "Reinforcement Learning of Communication in a Mesh of Small Language Models",
+    "short_name": "TalkMesh",
+    "authors": [
+      "Mehmet Kerem Turkcan"
+    ],
+    "first_published": "2026-09-24",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2609.30578",
+    "version_reviewed": "v1",
+    "primary_category": "collaboration",
+    "tier": "core",
+    "model_size_summary": "Includes 0.8B and 3B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2609.30578"
+    },
+    "contribution": "Learns confidence-gated communication and decentralized revision.",
+    "evidence": "The abstract compares communication against independent sampling and studies corrupted messages.",
+    "limitation": "Agent count and communication costs must accompany any accuracy comparison.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "collaboration"
+    ],
+    "note": null
+  },
+  {
+    "id": "2608.13787",
+    "title": "From Passive Delegates to Strategic Negotiators: Reinforcing Social Reasoning in Small Language Models with SocialRL",
+    "short_name": "SocialRL",
+    "authors": [
+      "Wenyue Hua",
+      "Zachary Huang",
+      "Tyler Payne",
+      "Safoora Yousefi",
+      "Saleema Amershi",
+      "Asli Celikyilmaz"
+    ],
+    "first_published": "2026-08-13",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2608.13787",
+    "version_reviewed": "v1",
+    "primary_category": "training",
+    "tier": "core",
+    "model_size_summary": "4B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2608.13787"
+    },
+    "contribution": "Trains agents to represent a principal in negotiations with conflicting interests.",
+    "evidence": "The abstract describes six domains and cross-domain policy evaluation.",
+    "limitation": "Controlled negotiation outcomes do not establish real-world delegation reliability.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "training"
+    ],
+    "note": null
+  },
+  {
+    "id": "2608.07169",
+    "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
+    "short_name": "AMD",
+    "authors": [
+      "Taeil Kim",
+      "Kangsan Kim",
+      "Sung Ju Hwang"
+    ],
+    "first_published": "2026-08-07",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2608.07169",
+    "version_reviewed": "v1",
+    "primary_category": "memory",
+    "tier": "core",
+    "model_size_summary": "4–8B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2608.07169"
+    },
+    "contribution": "Transfers teacher experience into workflow, subtask, and function memories without student weight updates.",
+    "evidence": "Authors evaluate AppWorld, BFCL V3, and ToolSandbox using four small students.",
+    "limitation": "Teacher-generated memory has construction cost; training-free does not mean cost-free.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "memory"
+    ],
+    "note": null
+  },
+  {
+    "id": "2605.23019",
+    "title": "PACE: Two-Timescale Self-Evolution for Small Language Model Agents",
+    "short_name": "PACE",
+    "authors": [
+      "Chen Ling",
+      "Pei Chen",
+      "Albert Guan",
+      "Jiaming Qu",
+      "Shayan Ali Akbar",
+      "Madhu Gopinathan",
+      "Erwin Cornejo"
+    ],
+    "first_published": "2026-05-21",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2605.23019",
+    "version_reviewed": "v1",
+    "primary_category": "recovery",
+    "tier": "core",
+    "model_size_summary": "4–14B; includes models above scope threshold",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2605.23019"
+    },
+    "contribution": "Separates prompt refinement from control-logic changes accepted through held-out validation.",
+    "evidence": "Authors use three frozen backbones, controlled tasks, and a tau-bench case study.",
+    "limitation": "Some models exceed 10B; validation costs and domain transfer need deeper review.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "recovery"
+    ],
+    "note": null
+  },
+  {
+    "id": "2604.19299",
+    "title": "Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms",
+    "short_name": "Rethinking Scale",
+    "authors": [
+      "Xinlin Wang",
+      "Mats Brorsson"
+    ],
+    "first_published": "2026-04-21",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2604.19299",
+    "version_reviewed": "v1",
+    "primary_category": "evaluation",
+    "tier": "core",
+    "model_size_summary": "<10B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2604.19299"
+    },
+    "contribution": "Compares base models, tool-equipped single agents, and multi-agent systems.",
+    "evidence": "Authors report the best performance–cost balance for the single-agent setup studied.",
+    "limitation": "A setting-specific negative finding does not establish that collaboration never helps.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "evaluation"
+    ],
+    "note": null
+  },
+  {
+    "id": "2602.06485",
+    "title": "AgentCPM-Explore: Realizing Long-Horizon Deep Exploration for Edge-Scale Agents",
+    "short_name": "AgentCPM-Explore",
+    "authors": [
+      "Haotian Chen",
+      "Xin Cong",
+      "Shengda Fan",
+      "Yuyang Fu",
+      "Ziqin Gong",
+      "Yaxi Lu",
+      "Yishan Li",
+      "Boye Niu",
+      "Chengjun Pan",
+      "Zijun Song",
+      "Huadong Wang",
+      "Yesai Wu",
+      "Yueying Wu",
+      "Zihao Xie",
+      "Yukun Yan",
+      "Zhong Zhang",
+      "Yankai Lin",
+      "Zhiyuan Liu",
+      "Maosong Sun"
+    ],
+    "first_published": "2026-02-06",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2602.06485",
+    "version_reviewed": "v1",
+    "primary_category": "training",
+    "tier": "core",
+    "model_size_summary": "4B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2602.06485"
+    },
+    "contribution": "Combines model fusion, reward denoising, and context refinement for long-horizon exploration.",
+    "evidence": "The abstract reports benchmark comparisons and a GAIA text result under pass@64.",
+    "limitation": "pass@64 is not single-run reliability; local model size does not imply local tools or cheap training.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "training"
+    ],
+    "note": null
+  },
+  {
+    "id": "2601.11327",
+    "title": "Can Small Agents Collaborate to Beat a Single Large Language Model?",
+    "short_name": "Small-agent collaboration",
+    "authors": [
+      "Agata Żywot",
+      "Xinyi Chen",
+      "Yifei Yuan",
+      "Anders Søgaard",
+      "Maarten de Rijke"
+    ],
+    "first_published": "2026-01-16",
+    "last_revised": "2026-04-13",
+    "source_url": "https://arxiv.org/abs/2601.11327",
+    "version_reviewed": "v2",
+    "primary_category": "collaboration",
+    "tier": "supporting",
+    "model_size_summary": "Not established from reviewed abstract",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2601.11327"
+    },
+    "contribution": "Studies a central orchestrator with specialized workers and restricted communication.",
+    "evidence": "Authors find that reasoning at the orchestrator matters more than at workers.",
+    "limitation": "Inspect orchestrator size and matched inference budgets before crediting small workers.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "collaboration"
+    ],
+    "note": null
+  },
+  {
+    "id": "2511.19663",
+    "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
+    "short_name": "Fara-7B",
+    "authors": [
+      "Ahmed Awadallah",
+      "Yash Lara",
+      "Raghav Magazine",
+      "Hussein Mozannar",
+      "Akshay Nambi",
+      "Yash Pandya",
+      "Aravind Rajeswaran",
+      "Corby Rosset",
+      "Alexey Taymanov",
+      "Vibhav Vineet",
+      "Spencer Whitehead",
+      "Andrew Zhao"
+    ],
+    "first_published": "2025-11-24",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2511.19663",
+    "version_reviewed": "v1",
+    "primary_category": "edge",
+    "tier": "core",
+    "model_size_summary": "7B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2511.19663"
+    },
+    "contribution": "Trains a screenshot-based computer-use agent from filtered synthetic web trajectories.",
+    "evidence": "Authors evaluate WebVoyager, Online-Mind2Web, and WebTailBench.",
+    "limitation": "An on-device-capable model does not establish offline operation or fit on any specific GPU.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "edge"
+    ],
+    "note": null
+  },
+  {
+    "id": "2506.02153",
+    "title": "Small Language Models are the Future of Agentic AI",
+    "short_name": "SLM agent position paper",
+    "authors": [
+      "Peter Belcak",
+      "Greg Heinrich",
+      "Shizhe Diao",
+      "Yonggan Fu",
+      "Xin Dong",
+      "Saurav Muralidharan",
+      "Yingyan Celine Lin",
+      "Pavlo Molchanov"
+    ],
+    "first_published": "2025-06-02",
+    "last_revised": "2026-09-22",
+    "source_url": "https://arxiv.org/abs/2506.02153",
+    "version_reviewed": "v3",
+    "primary_category": "perspectives",
+    "tier": "background",
+    "model_size_summary": "Conceptual; heterogeneous sizes",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2506.02153"
+    },
+    "contribution": "Argues that repeated specialized agent calls can use smaller models.",
+    "evidence": "A position paper motivated by capabilities, architecture, and deployment economics.",
+    "limitation": "An architectural argument is not a universal empirical demonstration of cheaper successful tasks.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "perspectives"
+    ],
+    "note": null
+  }
+]

@@ -1,0 +1,15 @@
+name: Correct an entry
+description: Report inaccurate metadata or an unsupported claim.
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Paper ID
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction and supporting primary source
+    validations:
+      required: true

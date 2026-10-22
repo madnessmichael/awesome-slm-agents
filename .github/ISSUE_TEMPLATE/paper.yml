@@ -1,0 +1,20 @@
+name: Suggest a paper
+description: Propose a primary-source resource with scope and evidence.
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Primary paper URL / ID
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Scope, contribution, evidence, and limitation
+      description: Include model size, benchmark conditions, and what you reviewed.
+    validations:
+      required: true
+  - type: textarea
+    id: assistance
+    attributes:
+      label: Review provenance and AI assistance

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "perspectives",
+    "title": "Surveys and Perspectives",
+    "question": "Why use small models in agents?"
+  },
+  {
+    "id": "training",
+    "title": "Agent Training and Distillation",
+    "question": "Which agent capabilities should be learned?"
+  },
+  {
+    "id": "tools",
+    "title": "Tool Use and Structured Actions",
+    "question": "How do agents select tools and valid arguments?"
+  },
+  {
+    "id": "recovery",
+    "title": "Planning and Error Recovery",
+    "question": "How do agents detect failure and resume progress?"
+  },
+  {
+    "id": "memory",
+    "title": "Memory and Context Management",
+    "question": "What belongs in weights, context, or external memory?"
+  },
+  {
+    "id": "collaboration",
+    "title": "Multi-Agent Collaboration",
+    "question": "When does communication justify its overhead?"
+  },
+  {
+    "id": "routing",
+    "title": "Hybrid Systems and Routing",
+    "question": "When should a small agent escalate?"
+  },
+  {
+    "id": "edge",
+    "title": "On-Device and Edge Deployment",
+    "question": "What can run locally under actual hardware limits?"
+  },
+  {
+    "id": "evaluation",
+    "title": "Benchmarks and Evaluation",
+    "question": "What is the cost of completing a task correctly?"
+  }
+]
