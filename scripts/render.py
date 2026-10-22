@@ -27,7 +27,7 @@ def venue_label(p):
 def catalog():
     out = []
     for c, papers in groups():
-        out += [f"### {c['title']}", '']
+        out += [f"## {c['title']}", '']
         for p in papers:
             out += [f"- **[{p['title']}]({p['source_url']})** ({(p['first_published'] + ' · ') if p['first_published'] else ''}{venue_label(p)}) — {p['contribution']}"]
         out += ['']
