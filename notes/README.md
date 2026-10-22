@@ -1,3 +1,11 @@
-# Full-text review notes
+# Focused manuscript notes
 
-No full-text review notes are claimed in the initial release. Use [the template](TEMPLATE.md) for a sourced review and link it from the matching metadata entry. Templates are not completed reviews.
+Five AI-assisted notes inspect selected methods/results and relevant implementation sections. They are **not exhaustive full-text audits, human reviews, or reproductions**. Each note names its version and review scope.
+
+- [ProD](prod.md)
+- [HAD](had.md)
+- [AMD](amd.md)
+- [Rethinking Scale](rethinking-scale.md)
+- [TinyAgent](tinyagent.md)
+
+[Template](TEMPLATE.md) for future full reviews.

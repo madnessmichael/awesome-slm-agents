@@ -21,9 +21,14 @@
     "models": [],
     "parameters_total_b": null,
     "parameters_active_b": null,
-    "benchmarks": [],
+    "benchmarks": [
+      "MATH",
+      "HotpotQA",
+      "Omni-MATH",
+      "2WikiMultiHopQA"
+    ],
     "resources": {
-      "code": null,
+      "code": "https://github.com/CaoYuanpu/ProD",
       "weights": null,
       "dataset": null
     },
@@ -42,19 +47,29 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary metadata/abstract and explicitly listed manuscript sections.",
+      "review_scope": "Selected methods, results, and implementation/robustness sections; not exhaustive full-text review.",
+      "sections_reviewed": [
+        "Sections 2–4",
+        "Table 3",
+        "Appendix B",
+        "NeurIPS checklist: statistical significance"
+      ],
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
-      "metric": null,
-      "attempt_budget": null,
+      "metric": "Final-answer accuracy",
+      "attempt_budget": "Greedy decoding; maximum 10 interaction turns",
       "teacher_at_inference": null,
-      "hardware": null,
+      "hardware": "Appendix B: single A100 80GB and single H200 reported as 140GB; per-task assignment unestablished",
       "cost_per_success": null
     },
     "tags": [
       "recovery"
     ],
-    "note": null
+    "note": "notes/prod.md",
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment.",
+    "note_version_reviewed": "v2"
   },
   {
     "id": "2610.02858",
@@ -72,11 +87,15 @@
     "version_reviewed": "v1",
     "primary_category": "training",
     "tier": "core",
-    "model_size_summary": "Not established from abstract",
+    "model_size_summary": "Qwen3 students 0.6B/1.7B; teachers 8B and 30B-A3B; Gemma cross-family study",
     "models": [],
     "parameters_total_b": null,
     "parameters_active_b": null,
-    "benchmarks": [],
+    "benchmarks": [
+      "ALFWorld",
+      "WebShop",
+      "ScienceWorld"
+    ],
     "resources": {
       "code": null,
       "weights": null,
@@ -97,11 +116,19 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary metadata/abstract and explicitly listed manuscript sections.",
+      "review_scope": "Selected methods, results, and implementation/robustness sections; not exhaustive full-text review.",
+      "sections_reviewed": [
+        "Section 3",
+        "Sections 4.1–4.5",
+        "Tables 2–4 and 8",
+        "Appendix B.1–B.2"
+      ],
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
-      "metric": null,
-      "attempt_budget": null,
+      "metric": "Success rate; environment score",
+      "attempt_budget": "ALFWorld 30 steps; WebShop/ScienceWorld 15 steps; Table 8",
       "teacher_at_inference": null,
       "hardware": null,
       "cost_per_success": null
@@ -109,7 +136,9 @@
     "tags": [
       "training"
     ],
-    "note": null
+    "note": "notes/had.md",
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment.",
+    "note_version_reviewed": "v1"
   },
   {
     "id": "2609.30578",
@@ -149,7 +178,10 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -161,7 +193,8 @@
     "tags": [
       "collaboration"
     ],
-    "note": null
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
   },
   {
     "id": "2608.13787",
@@ -206,7 +239,10 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -218,7 +254,8 @@
     "tags": [
       "training"
     ],
-    "note": null
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
   },
   {
     "id": "2608.07169",
@@ -239,7 +276,11 @@
     "models": [],
     "parameters_total_b": null,
     "parameters_active_b": null,
-    "benchmarks": [],
+    "benchmarks": [
+      "AppWorld test_normal",
+      "BFCL V3 multi-turn base",
+      "ToolSandbox"
+    ],
     "resources": {
       "code": null,
       "weights": null,
@@ -260,10 +301,18 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary metadata/abstract and explicitly listed manuscript sections.",
+      "review_scope": "Selected methods, results, and implementation/robustness sections; not exhaustive full-text review.",
+      "sections_reviewed": [
+        "Section 3",
+        "Section 4.1",
+        "Tables 1–3",
+        "Appendix B.3–B.4"
+      ],
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
-      "metric": null,
+      "metric": "Benchmark-specific task success; Table 1 averages two runs",
       "attempt_budget": null,
       "teacher_at_inference": null,
       "hardware": null,
@@ -272,7 +321,9 @@
     "tags": [
       "memory"
     ],
-    "note": null
+    "note": "notes/amd.md",
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment.",
+    "note_version_reviewed": "v1"
   },
   {
     "id": "2605.23019",
@@ -318,7 +369,10 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -330,7 +384,8 @@
     "tags": [
       "recovery"
     ],
-    "note": null
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
   },
   {
     "id": "2604.19299",
@@ -346,7 +401,7 @@
     "version_reviewed": "v1",
     "primary_category": "evaluation",
     "tier": "core",
-    "model_size_summary": "<10B",
+    "model_size_summary": "27 models; Table 1 includes SOLAR 10.7B despite abstract framing <10B",
     "models": [],
     "parameters_total_b": null,
     "parameters_active_b": null,
@@ -363,7 +418,7 @@
     },
     "contribution": "Compares base models, tool-equipped single agents, and multi-agent systems.",
     "evidence": "Authors report the best performance–cost balance for the single-agent setup studied.",
-    "limitation": "A setting-specific negative finding does not establish that collaboration never helps.",
+    "limitation": "Financial tasks, fixed ReAct designs and a five-turn cap constrain transfer; Table 1 includes a 10.7B model.",
     "verification": {
       "metadata_verified": true,
       "abstract_reviewed": true,
@@ -371,19 +426,28 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary metadata/abstract and explicitly listed manuscript sections.",
+      "review_scope": "Selected methods, results, and implementation/robustness sections; not exhaustive full-text review.",
+      "sections_reviewed": [
+        "Sections 3–5",
+        "Tables 1–2",
+        "Appendix E"
+      ],
+      "manuscript_sections_reviewed": true
     },
     "evaluation": {
-      "metric": null,
-      "attempt_budget": null,
+      "metric": "Completion rate, NRQ, latency, tokens/sample; not interchangeable",
+      "attempt_budget": "Agent interaction cap: 5 turns",
       "teacher_at_inference": null,
-      "hardware": null,
+      "hardware": "NVIDIA H100 80GB, vLLM, CUDA 12.1; Section 3.4",
       "cost_per_success": null
     },
     "tags": [
       "evaluation"
     ],
-    "note": null
+    "note": "notes/rethinking-scale.md",
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment.",
+    "note_version_reviewed": "v1"
   },
   {
     "id": "2602.06485",
@@ -441,7 +505,10 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -453,7 +520,8 @@
     "tags": [
       "training"
     ],
-    "note": null
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
   },
   {
     "id": "2601.11327",
@@ -497,7 +565,10 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -509,7 +580,8 @@
     "tags": [
       "collaboration"
     ],
-    "note": null
+    "note": null,
+    "inclusion_reason": "Provides evaluation or system-design evidence used to study SLM agents."
   },
   {
     "id": "2511.19663",
@@ -560,7 +632,10 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -572,7 +647,8 @@
     "tags": [
       "edge"
     ],
-    "note": null
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
   },
   {
     "id": "2506.02153",
@@ -619,7 +695,10 @@
       "human_reviewed": false,
       "reproduced": false,
       "checked_on": "2026-10-22",
-      "method": "AI-assisted comparison with primary arXiv landing page and abstract"
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
     },
     "evaluation": {
       "metric": null,
@@ -631,6 +710,946 @@
     "tags": [
       "perspectives"
     ],
-    "note": null
+    "note": null,
+    "inclusion_reason": "Foundational context for specialized small-model tool use or agent economics."
+  },
+  {
+    "id": "2409.00608",
+    "title": "TinyAgent: Function Calling at the Edge",
+    "short_name": "TinyAgent",
+    "authors": [
+      "Lutfi Eren Erdogan",
+      "Nicholas Lee",
+      "Siddharth Jha",
+      "Sehoon Kim",
+      "Ryan Tabrizi",
+      "Suhong Moon",
+      "Coleman Hooper",
+      "Gopala Anumanchipalli",
+      "Kurt Keutzer",
+      "Amir Gholami"
+    ],
+    "first_published": "2024-09-01",
+    "last_revised": "2024-10-25",
+    "source_url": "https://arxiv.org/abs/2409.00608",
+    "version_reviewed": "v3",
+    "primary_category": "tools",
+    "tier": "core",
+    "model_size_summary": "1.1B and 7B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [
+      "Synthetic 16-tool Mac function-plan test set"
+    ],
+    "resources": {
+      "code": "https://github.com/SqueezeAILab/TinyAgent",
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "published",
+      "venue": "EMNLP 2024 System Demonstrations",
+      "status_source": "https://aclanthology.org/2024.emnlp-demo.9/"
+    },
+    "contribution": "Specializes small planners for function dependencies and retrieves relevant tools.",
+    "evidence": "Authors demonstrate a MacBook assistant and compare function-plan success.",
+    "limitation": "A fixed tool inventory and synthetic plan metric do not establish open-ended agent reliability.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary metadata/abstract and explicitly listed manuscript sections.",
+      "review_scope": "Selected methods, results, and implementation/robustness sections; not exhaustive full-text review.",
+      "sections_reviewed": [
+        "Sections 3–4",
+        "Tables 1–2"
+      ],
+      "manuscript_sections_reviewed": true
+    },
+    "evaluation": {
+      "metric": "Function-plan dependency graph success; 1K test examples (v1)",
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "tools"
+    ],
+    "note": "notes/tinyagent.md",
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment.",
+    "note_version_reviewed": "v1"
+  },
+  {
+    "id": "2409.00920",
+    "title": "ToolACE: Winning the Points of LLM Function Calling",
+    "short_name": "ToolACE",
+    "authors": [
+      "Weiwen Liu",
+      "Xu Huang",
+      "Xingshan Zeng",
+      "Xinlong Hao",
+      "Shuai Yu",
+      "Dexun Li",
+      "Shuai Wang",
+      "Weinan Gan",
+      "Zhengying Liu",
+      "Yuanqing Yu",
+      "Zezhong Wang",
+      "Yuxian Wang",
+      "Wu Ning",
+      "Yutai Hou",
+      "Bin Wang",
+      "Chuhan Wu",
+      "Xinzhi Wang",
+      "Yong Liu",
+      "Yasheng Wang",
+      "Duyu Tang",
+      "Dandan Tu",
+      "Lifeng Shang",
+      "Xin Jiang",
+      "Ruiming Tang",
+      "Defu Lian",
+      "Qun Liu",
+      "Enhong Chen"
+    ],
+    "first_published": "2024-09-02",
+    "last_revised": "2025-07-25",
+    "source_url": "https://arxiv.org/abs/2409.00920",
+    "version_reviewed": "v2",
+    "primary_category": "tools",
+    "tier": "core",
+    "model_size_summary": "Includes 8B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2409.00920"
+    },
+    "contribution": "Synthesizes diverse function-calling data with rule and model verification.",
+    "evidence": "Authors report an 8B model on the Berkeley Function-Calling Leaderboard.",
+    "limitation": "Function-call scores do not establish long-horizon completion or cheap data generation.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "tools"
+    ],
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
+  },
+  {
+    "id": "2404.01744",
+    "title": "Octopus v2: On-device language model for super agent",
+    "short_name": "Octopus v2",
+    "authors": [
+      "Wei Chen",
+      "Zhiyuan Li"
+    ],
+    "first_published": "2024-04-02",
+    "last_revised": "2026-09-11",
+    "source_url": "https://arxiv.org/abs/2404.01744",
+    "version_reviewed": "v7",
+    "primary_category": "edge",
+    "tier": "core",
+    "model_size_summary": "2B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2404.01744"
+    },
+    "contribution": "Targets low-latency function calling with an on-device model.",
+    "evidence": "The abstract reports comparisons with GPT-4 and a retrieval-based Llama baseline.",
+    "limitation": "Inspect the tool inventory and matched hardware before generalizing latency claims.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "edge"
+    ],
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
+  },
+  {
+    "id": "2406.04151",
+    "title": "AgentGym: Evolving Large Language Model-based Agents across Diverse Environments",
+    "short_name": "AgentGym",
+    "authors": [
+      "Zhiheng Xi",
+      "Yiwen Ding",
+      "Wenxiang Chen",
+      "Boyang Hong",
+      "Honglin Guo",
+      "Junzhe Wang",
+      "Dingwen Yang",
+      "Chenyang Liao",
+      "Xin Guo",
+      "Wei He",
+      "Songyang Gao",
+      "Lu Chen",
+      "Rui Zheng",
+      "Yicheng Zou",
+      "Tao Gui",
+      "Qi Zhang",
+      "Xipeng Qiu",
+      "Xuanjing Huang",
+      "Zuxuan Wu",
+      "Yu-Gang Jiang"
+    ],
+    "first_published": "2024-06-06",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2406.04151",
+    "version_reviewed": "v1",
+    "primary_category": "evaluation",
+    "tier": "supporting",
+    "model_size_summary": "Not established from reviewed abstract",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2406.04151"
+    },
+    "contribution": "Combines environments, trajectories, and an agent-evolution method.",
+    "evidence": "Authors describe cross-environment agent learning and an evaluation suite.",
+    "limitation": "Useful evaluation infrastructure; abstract-level review does not establish the small-model subset.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "evaluation"
+    ],
+    "note": null,
+    "inclusion_reason": "Provides evaluation or system-design evidence used to study SLM agents."
+  },
+  {
+    "id": "2408.04682",
+    "title": "ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities",
+    "short_name": "ToolSandbox",
+    "authors": [
+      "Jiarui Lu",
+      "Thomas Holleis",
+      "Yizhe Zhang",
+      "Bernhard Aumayer",
+      "Feng Nan",
+      "Felix Bai",
+      "Shuang Ma",
+      "Shen Ma",
+      "Mengyu Li",
+      "Guoli Yin",
+      "Zirui Wang",
+      "Ruoming Pang"
+    ],
+    "first_published": "2024-08-08",
+    "last_revised": "2025-04-16",
+    "source_url": "https://arxiv.org/abs/2408.04682",
+    "version_reviewed": "v2",
+    "primary_category": "evaluation",
+    "tier": "supporting",
+    "model_size_summary": "Benchmark; multiple model sizes",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "published",
+      "venue": "Findings of NAACL 2025",
+      "status_source": "https://aclanthology.org/2025.findings-naacl.65/"
+    },
+    "contribution": "Evaluates state dependencies and intermediate milestones in interactive tool use.",
+    "evidence": "Authors use stateful execution and a simulated conversational user.",
+    "limitation": "A benchmark for SLM-agent studies, not a small-agent training method; simulator behavior affects results.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "evaluation"
+    ],
+    "note": null,
+    "inclusion_reason": "Provides evaluation or system-design evidence used to study SLM agents."
+  },
+  {
+    "id": "2406.12045",
+    "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+    "short_name": "τ-bench",
+    "authors": [
+      "Shunyu Yao",
+      "Noah Shinn",
+      "Pedram Razavi",
+      "Karthik Narasimhan"
+    ],
+    "first_published": "2024-06-17",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2406.12045",
+    "version_reviewed": "v1",
+    "primary_category": "evaluation",
+    "tier": "supporting",
+    "model_size_summary": "Benchmark; multiple model sizes",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2406.12045"
+    },
+    "contribution": "Measures policy-following task completion using final database states.",
+    "evidence": "Authors study repeated-trial reliability using pass^k.",
+    "limitation": "pass^k requires consistent success across trials; it is not best-of-k pass@k.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "evaluation"
+    ],
+    "note": null,
+    "inclusion_reason": "Provides evaluation or system-design evidence used to study SLM agents."
+  },
+  {
+    "id": "2501.12326",
+    "title": "UI-TARS: Pioneering Automated GUI Interaction with Native Agents",
+    "short_name": "UI-TARS",
+    "authors": [
+      "Yujia Qin",
+      "Yining Ye",
+      "Junjie Fang",
+      "Haoming Wang",
+      "Shihao Liang",
+      "Shizuo Tian",
+      "Junda Zhang",
+      "Jiahao Li",
+      "Yunxin Li",
+      "Shijue Huang",
+      "Wanjun Zhong",
+      "Kuanye Li",
+      "Jiale Yang",
+      "Yu Miao",
+      "Woyu Lin",
+      "Longxiang Liu",
+      "Xu Jiang",
+      "Qianli Ma",
+      "Jingyu Li",
+      "Xiaojun Xiao",
+      "Kai Cai",
+      "Chuang Li",
+      "Yaowei Zheng",
+      "Chaolin Jin",
+      "Chen Li",
+      "Xiao Zhou",
+      "Minchao Wang",
+      "Haoli Chen",
+      "Zhaojian Li",
+      "Haihua Yang",
+      "Haifeng Liu",
+      "Feng Lin",
+      "Tao Peng",
+      "Xin Liu",
+      "Guang Shi"
+    ],
+    "first_published": "2025-01-21",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2501.12326",
+    "version_reviewed": "v1",
+    "primary_category": "edge",
+    "tier": "supporting",
+    "model_size_summary": "Mixed-size family; per-result sizes need full-text review",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2501.12326"
+    },
+    "contribution": "Learns screenshot-conditioned actions with reasoning and iterative training.",
+    "evidence": "Authors evaluate perception, grounding, and GUI execution benchmarks.",
+    "limitation": "Do not assign headline results to a small variant without checking model size and step budget.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "edge"
+    ],
+    "note": null,
+    "inclusion_reason": "Provides evaluation or system-design evidence used to study SLM agents."
+  },
+  {
+    "id": "2605.16604",
+    "title": "R2V Agent: Teaching SLMs When to Ask for Help",
+    "short_name": "R2V-Agent",
+    "authors": [
+      "Raghu Vamshi Hemadri",
+      "Humaira Firdowse Mohammed",
+      "Rishabh Maheshwary",
+      "Srivatsava Daruru",
+      "Sagar Davasam",
+      "Vikas Yadav",
+      "Srinivas Sunkara",
+      "Sai Rajeswar"
+    ],
+    "first_published": "2026-05-15",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2605.16604",
+    "version_reviewed": "v1",
+    "primary_category": "routing",
+    "tier": "core",
+    "model_size_summary": "Four SLM backbones; sizes not established from abstract",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2605.16604"
+    },
+    "contribution": "Routes individual decisions using a calibrated verifier after small-policy training.",
+    "evidence": "Authors evaluate HumanEval+, TextWorld, and TerminalBench with stronger-model escalation.",
+    "limitation": "System success includes teacher intervention; escalation fraction alone is not total cost.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "routing"
+    ],
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
+  },
+  {
+    "id": "2609.22951",
+    "title": "AgentRouter: Heterogeneous Model Routing for Cost-Optimal Multi-Step Agentic Workflows",
+    "short_name": "AgentRouter",
+    "authors": [
+      "Rudrendu Kumar Paul",
+      "Sourav Nandy"
+    ],
+    "first_published": "2026-09-19",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2609.22951",
+    "version_reviewed": "v1",
+    "primary_category": "routing",
+    "tier": "core",
+    "model_size_summary": "12M router; four backend tiers including a 7B example",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "accepted_author_reported",
+      "venue": "AgenticUQ Workshop, ICML 2026 (arXiv author comment; workshop acceptance not independently checked)",
+      "status_source": "https://arxiv.org/abs/2609.22951"
+    },
+    "contribution": "Assigns trajectory steps to heterogeneous model tiers.",
+    "evidence": "Authors compare step-level routing with frontier-only and query-routing baselines.",
+    "limitation": "The router is not the agent backbone; quality retention and costs require benchmark-specific scrutiny.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "routing"
+    ],
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
+  },
+  {
+    "id": "2403.12881",
+    "title": "Agent-FLAN: Designing Data and Methods of Effective Agent Tuning for Large Language Models",
+    "short_name": "Agent-FLAN",
+    "authors": [
+      "Zehui Chen",
+      "Kuikun Liu",
+      "Qiuchen Wang",
+      "Wenwei Zhang",
+      "Jiangning Liu",
+      "Dahua Lin",
+      "Kai Chen",
+      "Feng Zhao"
+    ],
+    "first_published": "2024-03-19",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2403.12881",
+    "version_reviewed": "v1",
+    "primary_category": "training",
+    "tier": "core",
+    "model_size_summary": "Includes Llama2-7B; mixed-size study",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": "https://github.com/InternLM/Agent-FLAN",
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "published",
+      "venue": "Findings of ACL 2024",
+      "status_source": "https://aclanthology.org/2024.findings-acl.557/"
+    },
+    "contribution": "Separates training concerns and adds negative examples for agent tuning.",
+    "evidence": "Authors evaluate agent tasks and hallucinated actions with a 7B model.",
+    "limitation": "Training improvements need separate accounting for synthetic data and generalization.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "training"
+    ],
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
+  },
+  {
+    "id": "2604.08516",
+    "title": "MolmoWeb: Open Visual Web Agent and Open Data for the Open Web",
+    "short_name": "MolmoWeb",
+    "authors": [
+      "Tanmay Gupta",
+      "Piper Wolters",
+      "Zixian Ma",
+      "Peter Sushko",
+      "Rock Yuren Pang",
+      "Diego Llanes",
+      "Yue Yang",
+      "Taira Anderson",
+      "Boyuan Zheng",
+      "Zhongzheng Ren",
+      "Harsh Trivedi",
+      "Taylor Blanton",
+      "Caleb Ouellette",
+      "Winson Han",
+      "Ali Farhadi",
+      "Ranjay Krishna"
+    ],
+    "first_published": "2026-04-09",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2604.08516",
+    "version_reviewed": "v1",
+    "primary_category": "edge",
+    "tier": "core",
+    "model_size_summary": "4B and 8B",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2604.08516"
+    },
+    "contribution": "Builds visual browser policies with synthetic and human demonstration data.",
+    "evidence": "Authors report WebVoyager, Online-Mind2Web, and DeepShop evaluations.",
+    "limitation": "Parallel rollouts and best-of-N selection must be separated from single-run success.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "edge"
+    ],
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
+  },
+  {
+    "id": "2310.12823",
+    "title": "AgentTuning: Enabling Generalized Agent Abilities for LLMs",
+    "short_name": "AgentTuning",
+    "authors": [
+      "Aohan Zeng",
+      "Mingdao Liu",
+      "Rui Lu",
+      "Bowen Wang",
+      "Xiao Liu",
+      "Yuxiao Dong",
+      "Jie Tang"
+    ],
+    "first_published": "2023-10-19",
+    "last_revised": "2023-10-22",
+    "source_url": "https://arxiv.org/abs/2310.12823",
+    "version_reviewed": "v2",
+    "primary_category": "training",
+    "tier": "core",
+    "model_size_summary": "7B, 13B, 70B; mixed-size study",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": "https://github.com/THUDM/AgentTuning",
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "published",
+      "venue": "Findings of ACL 2024",
+      "status_source": "https://aclanthology.org/2024.findings-acl.181/"
+    },
+    "contribution": "Mixes agent trajectories with general instruction data.",
+    "evidence": "Authors release AgentLM variants and evaluate unseen agent tasks.",
+    "limitation": "The abstract comparison against GPT-3.5 concerns 70B, not the 7B variant.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "training"
+    ],
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment."
+  },
+  {
+    "id": "2302.04761",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "short_name": "Toolformer",
+    "authors": [
+      "Timo Schick",
+      "Jane Dwivedi-Yu",
+      "Roberto Dessì",
+      "Roberta Raileanu",
+      "Maria Lomeli",
+      "Luke Zettlemoyer",
+      "Nicola Cancedda",
+      "Thomas Scialom"
+    ],
+    "first_published": "2023-02-09",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2302.04761",
+    "version_reviewed": "v1",
+    "primary_category": "tools",
+    "tier": "background",
+    "model_size_summary": "Not established from reviewed abstract",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2302.04761"
+    },
+    "contribution": "Learns API insertion from a few demonstrations and self-supervision.",
+    "evidence": "Authors evaluate several tools and downstream zero-shot tasks.",
+    "limitation": "Foundational tool-use work; not evidence of reliable long-horizon interactive agents.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "tools"
+    ],
+    "note": null,
+    "inclusion_reason": "Foundational context for specialized small-model tool use or agent economics."
+  },
+  {
+    "id": "2510.01253",
+    "title": "OR-Toolformer: Modeling and Solving Operations Research Problems with Tool Augmented Large Language Models",
+    "short_name": "OR-Toolformer",
+    "authors": [
+      "Jianzhang Zhang",
+      "Jialong Zhou",
+      "Chuang Liu"
+    ],
+    "first_published": "2025-09-24",
+    "last_revised": null,
+    "source_url": "https://arxiv.org/abs/2510.01253",
+    "version_reviewed": "v1",
+    "primary_category": "tools",
+    "tier": "core",
+    "model_size_summary": "Llama-3.1-8B-Instruct",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": null,
+      "weights": null,
+      "dataset": null
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2510.01253"
+    },
+    "contribution": "Fine-tunes a small model to formulate operations-research tasks with external solvers.",
+    "evidence": "Authors evaluate execution accuracy and two unseen problem types.",
+    "limitation": "Solver dependence and problem-type coverage limit claims about general agent planning.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-10-22",
+      "method": "AI-assisted comparison with primary arXiv landing page and abstract",
+      "review_scope": "Primary landing-page metadata and abstract; no manuscript review claimed.",
+      "sections_reviewed": [],
+      "manuscript_sections_reviewed": false
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "tools"
+    ],
+    "note": null,
+    "inclusion_reason": "Directly studies small-model agent capabilities or deployment.",
+    "metadata_notes": "Primary page reports submission 2025-09-24 despite the 2510 identifier prefix; retained as reported, not inferred from ID."
   }
 ]
