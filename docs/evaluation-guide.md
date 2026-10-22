@@ -22,3 +22,7 @@ Cost per successful task = total cost of **all** evaluation attempts / successfu
 For every quantitative claim, record source version and page/table, denominator, baseline, setting, and whether the difference is percentage points or relative percent. Never infer performance from GPU name or combine unified memory with discrete VRAM.
 
 A reproduction requires pinned code/model/data versions, hardware/software manifest, exact commands, seeds, raw outputs, task counts, metric computation, and deviations from the paper. No entry currently meets that bar in this repository.
+
+## Repeated-trial metric notation
+
+Original [τ-bench](https://arxiv.org/abs/2406.12045) uses **pass^k** to measure consistent success across repeated trials. This differs from **pass@k**, which measures finding a successful attempt within a set of attempts. Preserve the paper’s notation and estimator; do not use the two interchangeably.

@@ -1,6 +1,6 @@
 # Kế hoạch xây dựng awesome-slm-agents
 
-Ngày lập: 22/10/2026. Tên hiển thị: **Awesome Small Language Model Agents**.
+Ngày lập: 22/10/2026. **Cập nhật triển khai:** catalog hiện có 25 paper và 5 focused manuscript notes; xem [trạng thái thực tế](catalog-status.md). Mục tiêu đọc toàn văn đầy đủ vẫn mở. Tên hiển thị: **Awesome Small Language Model Agents**.
 
 ## 1. Sản phẩm và giá trị
 
