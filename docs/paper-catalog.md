@@ -16,7 +16,7 @@ Why use small models in agents?
 - **Contribution:** Argues that repeated specialized agent calls can use smaller models.
 - **Evidence:** A position paper motivated by capabilities, architecture, and deployment economics.
 - **Limitation:** An architectural argument is not a universal empirical demonstration of cheaper successful tasks.
-- **Status:** preprint.
+- **Status:** arXiv.
 - **Source review:** v3; metadata and abstract, checked 2026-10-22.
 
 ## Agent Training and Distillation
@@ -31,7 +31,7 @@ Which agent capabilities should be learned?
 - **Contribution:** Distills teacher actions conditioned on harness state and filters inconsistent preferences.
 - **Evidence:** Authors compare long-horizon agents with a fixed harness and report fewer unproductive loops.
 - **Limitation:** Model sizes, benchmark-level results, and teacher costs require full-text review.
-- **Status:** preprint.
+- **Status:** arXiv.
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.
 
 ### SocialRL
@@ -42,7 +42,7 @@ Which agent capabilities should be learned?
 - **Contribution:** Trains agents to represent a principal in negotiations with conflicting interests.
 - **Evidence:** The abstract describes six domains and cross-domain policy evaluation.
 - **Limitation:** Controlled negotiation outcomes do not establish real-world delegation reliability.
-- **Status:** preprint.
+- **Status:** arXiv.
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.
 
 ### AgentCPM-Explore
@@ -53,7 +53,7 @@ Which agent capabilities should be learned?
 - **Contribution:** Combines model fusion, reward denoising, and context refinement for long-horizon exploration.
 - **Evidence:** The abstract reports benchmark comparisons and a GAIA text result under pass@64.
 - **Limitation:** pass@64 is not single-run reliability; local model size does not imply local tools or cheap training.
-- **Status:** preprint.
+- **Status:** arXiv.
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.
 
 ## Planning and Error Recovery
@@ -68,7 +68,7 @@ How do agents detect failure and resume progress?
 - **Contribution:** Detects stalled trajectories and uses an adaptive distillation penalty.
 - **Evidence:** Authors evaluate eight small models on in-domain and out-of-domain tasks.
 - **Limitation:** Abstract review cannot establish fair total compute or robustness in production.
-- **Status:** NeurIPS 2026 (arXiv author comment; proceedings not independently checked).
+- **Status:** [NeurIPS 2026; accepted, author-reported](https://arxiv.org/abs/2610.19439).
 - **Source review:** v2; metadata and abstract, checked 2026-10-22.
 
 ### PACE
@@ -79,7 +79,7 @@ How do agents detect failure and resume progress?
 - **Contribution:** Separates prompt refinement from control-logic changes accepted through held-out validation.
 - **Evidence:** Authors use three frozen backbones, controlled tasks, and a tau-bench case study.
 - **Limitation:** Some models exceed 10B; validation costs and domain transfer need deeper review.
-- **Status:** preprint.
+- **Status:** arXiv.
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.
 
 ## Memory and Context Management
@@ -94,7 +94,7 @@ What belongs in weights, context, or external memory?
 - **Contribution:** Transfers teacher experience into workflow, subtask, and function memories without student weight updates.
 - **Evidence:** Authors evaluate AppWorld, BFCL V3, and ToolSandbox using four small students.
 - **Limitation:** Teacher-generated memory has construction cost; training-free does not mean cost-free.
-- **Status:** preprint.
+- **Status:** arXiv.
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.
 
 ## Multi-Agent Collaboration
@@ -109,7 +109,7 @@ When does communication justify its overhead?
 - **Contribution:** Learns confidence-gated communication and decentralized revision.
 - **Evidence:** The abstract compares communication against independent sampling and studies corrupted messages.
 - **Limitation:** Agent count and communication costs must accompany any accuracy comparison.
-- **Status:** preprint.
+- **Status:** arXiv.
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.
 
 ### Small-agent collaboration
@@ -120,7 +120,7 @@ When does communication justify its overhead?
 - **Contribution:** Studies a central orchestrator with specialized workers and restricted communication.
 - **Evidence:** Authors find that reasoning at the orchestrator matters more than at workers.
 - **Limitation:** Inspect orchestrator size and matched inference budgets before crediting small workers.
-- **Status:** preprint.
+- **Status:** [ICLR 2026 · MALGAI Workshop](https://openreview.net/pdf?id=RLHUTcvsA9).
 - **Source review:** v2; metadata and abstract, checked 2026-10-22.
 
 ## On-Device and Edge Deployment
@@ -135,7 +135,7 @@ What can run locally under actual hardware limits?
 - **Contribution:** Trains a screenshot-based computer-use agent from filtered synthetic web trajectories.
 - **Evidence:** Authors evaluate WebVoyager, Online-Mind2Web, and WebTailBench.
 - **Limitation:** An on-device-capable model does not establish offline operation or fit on any specific GPU.
-- **Status:** preprint.
+- **Status:** arXiv.
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.
 
 ## Benchmarks and Evaluation
@@ -150,5 +150,5 @@ What is the cost of completing a task correctly?
 - **Contribution:** Compares base models, tool-equipped single agents, and multi-agent systems.
 - **Evidence:** Authors report the best performance–cost balance for the single-agent setup studied.
 - **Limitation:** A setting-specific negative finding does not establish that collaboration never helps.
-- **Status:** preprint.
+- **Status:** [ACL 2026 Industry Track](https://aclanthology.org/2026.acl-industry.123/).
 - **Source review:** v1; metadata and abstract, checked 2026-10-22.

@@ -18,41 +18,41 @@ Focus: models up to **10B parameters**, with labeled exceptions. **11 papers** �
 
 ## Papers
 
-Newest first within each category. Dates refer to first publication. See the [detailed catalog](docs/paper-catalog.md) for model sizes, evidence, limitations, and publication status.
+Newest first within each category. Dates refer to first publication; venue links identify the track or workshop. `arXiv` means no conference venue has been verified here. See the [detailed catalog](docs/paper-catalog.md) for model sizes, evidence, limitations, and publication status.
 
 <!-- CATALOG:START -->
 
 ### Surveys and Perspectives
 
-- **[Small Language Models are the Future of Agentic AI](https://arxiv.org/abs/2506.02153)** (2025-06-02) — Argues that repeated specialized agent calls can use smaller models.
+- **[Small Language Models are the Future of Agentic AI](https://arxiv.org/abs/2506.02153)** (2025-06-02 · arXiv) — Argues that repeated specialized agent calls can use smaller models.
 
 ### Agent Training and Distillation
 
-- **[Harness-Aware Distillation for Small Language Model Agents](https://arxiv.org/abs/2610.02858)** (2026-10-02) — Distills teacher actions conditioned on harness state and filters inconsistent preferences.
-- **[From Passive Delegates to Strategic Negotiators: Reinforcing Social Reasoning in Small Language Models with SocialRL](https://arxiv.org/abs/2608.13787)** (2026-08-13) — Trains agents to represent a principal in negotiations with conflicting interests.
-- **[AgentCPM-Explore: Realizing Long-Horizon Deep Exploration for Edge-Scale Agents](https://arxiv.org/abs/2602.06485)** (2026-02-06) — Combines model fusion, reward denoising, and context refinement for long-horizon exploration.
+- **[Harness-Aware Distillation for Small Language Model Agents](https://arxiv.org/abs/2610.02858)** (2026-10-02 · arXiv) — Distills teacher actions conditioned on harness state and filters inconsistent preferences.
+- **[From Passive Delegates to Strategic Negotiators: Reinforcing Social Reasoning in Small Language Models with SocialRL](https://arxiv.org/abs/2608.13787)** (2026-08-13 · arXiv) — Trains agents to represent a principal in negotiations with conflicting interests.
+- **[AgentCPM-Explore: Realizing Long-Horizon Deep Exploration for Edge-Scale Agents](https://arxiv.org/abs/2602.06485)** (2026-02-06 · arXiv) — Combines model fusion, reward denoising, and context refinement for long-horizon exploration.
 
 ### Planning and Error Recovery
 
-- **[Progress-Aware Distillation for Mitigating Stagnation in Small Language Model Agents](https://arxiv.org/abs/2610.19439)** (2026-10-14) — Detects stalled trajectories and uses an adaptive distillation penalty.
-- **[PACE: Two-Timescale Self-Evolution for Small Language Model Agents](https://arxiv.org/abs/2605.23019)** (2026-05-21) — Separates prompt refinement from control-logic changes accepted through held-out validation.
+- **[Progress-Aware Distillation for Mitigating Stagnation in Small Language Model Agents](https://arxiv.org/abs/2610.19439)** (2026-10-14 · [NeurIPS 2026; accepted, author-reported](https://arxiv.org/abs/2610.19439)) — Detects stalled trajectories and uses an adaptive distillation penalty.
+- **[PACE: Two-Timescale Self-Evolution for Small Language Model Agents](https://arxiv.org/abs/2605.23019)** (2026-05-21 · arXiv) — Separates prompt refinement from control-logic changes accepted through held-out validation.
 
 ### Memory and Context Management
 
-- **[Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](https://arxiv.org/abs/2608.07169)** (2026-08-07) — Transfers teacher experience into workflow, subtask, and function memories without student weight updates.
+- **[Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](https://arxiv.org/abs/2608.07169)** (2026-08-07 · arXiv) — Transfers teacher experience into workflow, subtask, and function memories without student weight updates.
 
 ### Multi-Agent Collaboration
 
-- **[Reinforcement Learning of Communication in a Mesh of Small Language Models](https://arxiv.org/abs/2609.30578)** (2026-09-24) — Learns confidence-gated communication and decentralized revision.
-- **[Can Small Agents Collaborate to Beat a Single Large Language Model?](https://arxiv.org/abs/2601.11327)** (2026-01-16) — Studies a central orchestrator with specialized workers and restricted communication.
+- **[Reinforcement Learning of Communication in a Mesh of Small Language Models](https://arxiv.org/abs/2609.30578)** (2026-09-24 · arXiv) — Learns confidence-gated communication and decentralized revision.
+- **[Can Small Agents Collaborate to Beat a Single Large Language Model?](https://arxiv.org/abs/2601.11327)** (2026-01-16 · [ICLR 2026 · MALGAI Workshop](https://openreview.net/pdf?id=RLHUTcvsA9)) — Studies a central orchestrator with specialized workers and restricted communication.
 
 ### On-Device and Edge Deployment
 
-- **[Fara-7B: An Efficient Agentic Model for Computer Use](https://arxiv.org/abs/2511.19663)** (2025-11-24) — Trains a screenshot-based computer-use agent from filtered synthetic web trajectories.
+- **[Fara-7B: An Efficient Agentic Model for Computer Use](https://arxiv.org/abs/2511.19663)** (2025-11-24 · arXiv) — Trains a screenshot-based computer-use agent from filtered synthetic web trajectories.
 
 ### Benchmarks and Evaluation
 
-- **[Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms](https://arxiv.org/abs/2604.19299)** (2026-04-21) — Compares base models, tool-equipped single agents, and multi-agent systems.
+- **[Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms](https://arxiv.org/abs/2604.19299)** (2026-04-21 · [ACL 2026 Industry Track](https://aclanthology.org/2026.acl-industry.123/)) — Compares base models, tool-equipped single agents, and multi-agent systems.
 
 <!-- CATALOG:END -->
 

@@ -14,12 +14,22 @@ def groups():
             yield c, subset
 
 
+def venue_label(p):
+    publication = p['publication']
+    venue = publication['venue']
+    if not venue:
+        return 'arXiv'
+    if publication['status'] == 'accepted_author_reported':
+        venue = venue.split(' (')[0] + '; accepted, author-reported'
+    return f"[{venue}]({publication['status_source']})"
+
+
 def catalog():
     out = []
     for c, papers in groups():
         out += [f"### {c['title']}", '']
         for p in papers:
-            out += [f"- **[{p['title']}]({p['source_url']})** ({p['first_published']}) — {p['contribution']}"]
+            out += [f"- **[{p['title']}]({p['source_url']})** ({p['first_published']} · {venue_label(p)}) — {p['contribution']}"]
         out += ['']
     return '\n'.join(out).rstrip()
 
@@ -38,7 +48,7 @@ def detailed_catalog():
                     f"- **Contribution:** {p['contribution']}",
                     f"- **Evidence:** {p['evidence']}",
                     f"- **Limitation:** {p['limitation']}",
-                    f"- **Status:** {p['publication']['venue'] or p['publication']['status']}.",
+                    f"- **Status:** {venue_label(p)}.",
                     f"- **Source review:** {p['version_reviewed']}; metadata and abstract, checked {p['verification']['checked_on']}.", '']
     return '\n'.join(out).rstrip() + '\n'
 

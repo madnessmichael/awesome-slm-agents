@@ -357,9 +357,9 @@
       "dataset": null
     },
     "publication": {
-      "status": "preprint",
-      "venue": null,
-      "status_source": "https://arxiv.org/abs/2604.19299"
+      "status": "published",
+      "venue": "ACL 2026 Industry Track",
+      "status_source": "https://aclanthology.org/2026.acl-industry.123/"
     },
     "contribution": "Compares base models, tool-equipped single agents, and multi-agent systems.",
     "evidence": "Authors report the best performance–cost balance for the single-agent setup studied.",
@@ -483,9 +483,9 @@
       "dataset": null
     },
     "publication": {
-      "status": "preprint",
-      "venue": null,
-      "status_source": "https://arxiv.org/abs/2601.11327"
+      "status": "published",
+      "venue": "ICLR 2026 · MALGAI Workshop",
+      "status_source": "https://openreview.net/pdf?id=RLHUTcvsA9"
     },
     "contribution": "Studies a central orchestrator with specialized workers and restricted communication.",
     "evidence": "Authors find that reasoning at the orchestrator matters more than at workers.",
