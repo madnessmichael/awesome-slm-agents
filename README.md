@@ -1,26 +1,8 @@
 # Awesome Small Language Model Agents
 
-**Small Language Model Agents (SLM-Agents)** are AI systems that use a compact language model to decide what to do next while working toward a goal. The model can interpret a request, break it into steps, select tools, generate actions, and use feedback to continue, revise its approach, or stop. An agent may carry out several model calls and tool interactions before returning a result.
+**Small Language Model Agents (SLM-Agents)** use compact language models to plan, select tools, and act toward a goal. By combining the model with tools, memory, and feedback, these systems can retrieve information, execute code, and adapt to intermediate results. The research goal is to make useful agents practical under constraints on compute, memory, latency, and cost.
 
-A typical interaction follows this loop:
-
-**Goal → observe the current state → choose an action → execute a tool → inspect the result → continue or finish.**
-
-For example, an agent asked to reconcile an invoice with a purchase order could retrieve the documents, call an extraction tool, use code to compare amounts, and investigate any mismatch. The language model chooses and coordinates the steps; software performs operations such as calculation, database access, and document retrieval. A small model can therefore contribute to a useful system without storing every fact or performing every operation itself.
-
-The surrounding system matters as much as the backbone. Its main components can include:
-
-- **Tools:** functions, APIs, search, code execution, or interface actions that let the agent retrieve information and act.
-- **State and planning:** records of the current task, previous actions, and remaining steps or budget.
-- **Memory:** relevant facts, past interactions, and reusable procedures retrieved when needed.
-- **Feedback and recovery:** execution results, validation checks, and mechanisms for recognizing failed actions or stalled progress.
-- **Coordination:** delegation to specialized agents or escalation to a stronger model when the system supports it.
-
-There is **no universal parameter threshold** for an SLM. This collection focuses on dense backbones up to **10 billion parameters**, while including explicitly identified larger comparators and supporting work on memory or communication. For mixture-of-experts models, active parameters and total parameters describe different constraints. Small model size alone does not establish low total compute, a particular VRAM requirement, or fully local operation.
-
-The aim is to complete useful tasks within practical limits on **cost, latency, memory, and reliability**. Smaller backbones can make specialized, frequently repeated agent decisions more economical and enable local deployment in suitable configurations. These benefits depend on the whole workflow: repeated failures, long contexts, tool calls, teacher-generated data, or a larger orchestrator can offset savings. Task success and **total cost per successful task** are therefore more informative than parameter count or price per token alone. The [SLM-agent position paper](https://arxiv.org/abs/2506.02153) motivates this direction, while [HAD](https://arxiv.org/abs/2610.02858) examines how the model learns to use the software around it.
-
-This repository collects research on learning agent behavior, tool use, planning and recovery, memory, collaboration, and deployment with small language models.
+This repository collects papers on training, planning, memory, collaboration, and deployment for SLM-Agents, focusing on models up to **10B parameters** with explicitly identified exceptions. It examines how model capabilities and the surrounding software contribute to reliable task completion, and whether smaller models reduce the total resources needed to achieve it.
 
 <!-- CATALOG:START -->
 
