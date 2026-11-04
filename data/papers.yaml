@@ -57,6 +57,65 @@
     "note": null
   },
   {
+    "id": "2610.17816",
+    "title": "Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution",
+    "short_name": "EC²-Bench (EC2-Bench)",
+    "authors": [
+      "Pengcheng Huang",
+      "Zhenghao Liu",
+      "Shixin Ren",
+      "Shi Yu",
+      "Sijia Yao",
+      "Yukun Yan",
+      "Chaojun Xiao",
+      "Maosong Sun"
+    ],
+    "first_published": "2026-10-13",
+    "last_revised": "2026-10-18",
+    "source_url": "https://arxiv.org/abs/2610.17816",
+    "version_reviewed": "v2",
+    "primary_category": "routing",
+    "tier": "core",
+    "model_size_summary": "2B/9B/27B edge models paired with a cloud model",
+    "models": [],
+    "parameters_total_b": null,
+    "parameters_active_b": null,
+    "benchmarks": [],
+    "resources": {
+      "code": "https://github.com/OpenBMB/EC2-Bench",
+      "weights": null,
+      "dataset": "https://huggingface.co/datasets/chengpingan/EC2-Bench"
+    },
+    "publication": {
+      "status": "preprint",
+      "venue": null,
+      "status_source": "https://arxiv.org/abs/2610.17816"
+    },
+    "contribution": "Compares four edge–cloud collaboration strategies on 128 executable digital-workspace tasks, scoring task performance, cloud cost and privacy exposure.",
+    "evidence": "Authors report that with a 9B edge model, collaboration reaches about 73% of cloud-only performance at about 15% of its cloud cost; with stronger edge models, strategies converge in performance but still differ greatly in privacy exposure.",
+    "limitation": "Findings are specific to the studied task suite, model pairs and four collaboration strategies; this entry was submitted by the first author.",
+    "verification": {
+      "metadata_verified": true,
+      "abstract_reviewed": true,
+      "full_text_reviewed": false,
+      "human_reviewed": false,
+      "reproduced": false,
+      "checked_on": "2026-11-04",
+      "method": "Submitted by the first author; metadata compared with the primary arXiv landing page and abstract"
+    },
+    "evaluation": {
+      "metric": null,
+      "attempt_budget": null,
+      "teacher_at_inference": null,
+      "hardware": null,
+      "cost_per_success": null
+    },
+    "tags": [
+      "routing"
+    ],
+    "note": null
+  },
+  {
     "id": "2610.02858",
     "title": "Harness-Aware Distillation for Small Language Model Agents",
     "short_name": "HAD",
