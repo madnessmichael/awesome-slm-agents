@@ -33,6 +33,10 @@ This repository collects papers on training, planning, memory, collaboration, an
 - **[Can Small Agents Collaborate to Beat a Single Large Language Model?](https://arxiv.org/abs/2601.11327)** (2026-01-16 · [ICLR 2026 · MALGAI Workshop](https://openreview.net/pdf?id=RLHUTcvsA9)) — Studies a central orchestrator with specialized workers and restricted communication.
 - **[Latent-Lens: Visual Perception in Small Language Models Through Latent Communication](https://neurips.cc/virtual/2026/loc/sydney/poster/155307)** ([NeurIPS 2026 Poster](https://neurips.cc/virtual/2026/loc/sydney/poster/155307)) — Connects a VLM and an SLM through a lightweight latent-state codec instead of text messages.
 
+## Hybrid Systems and Routing
+
+- **[Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816)** (2026-10-13 · arXiv) — Compares four edge–cloud collaboration strategies on 128 executable digital-workspace tasks, scoring task performance, cloud cost and privacy exposure.
+
 ## On-Device and Edge Deployment
 
 - **[Fara-7B: An Efficient Agentic Model for Computer Use](https://arxiv.org/abs/2511.19663)** (2025-11-24 · arXiv) — Trains a screenshot-based computer-use agent from filtered synthetic web trajectories.

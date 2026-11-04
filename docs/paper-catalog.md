@@ -156,6 +156,21 @@ When does communication justify its overhead?
 - **Status:** [NeurIPS 2026 Poster](https://neurips.cc/virtual/2026/loc/sydney/poster/155307).
 - **Source review:** Official NeurIPS 2026 poster page; metadata and abstract, checked 2026-10-22.
 
+## Hybrid Systems and Routing
+
+When should a small agent escalate?
+
+### EC²-Bench (EC2-Bench)
+
+**[Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution](https://arxiv.org/abs/2610.17816)** — Pengcheng Huang et al.; 2026-10-13. `core`
+
+- **Models:** 2B/9B/27B edge models paired with a cloud model.
+- **Contribution:** Compares four edge–cloud collaboration strategies on 128 executable digital-workspace tasks, scoring task performance, cloud cost and privacy exposure.
+- **Evidence:** Authors report that with a 9B edge model, collaboration reaches about 73% of cloud-only performance at about 15% of its cloud cost; with stronger edge models, strategies converge in performance but still differ greatly in privacy exposure.
+- **Limitation:** Findings are specific to the studied task suite, model pairs and four collaboration strategies; this entry was submitted by the first author.
+- **Status:** arXiv.
+- **Source review:** v2; metadata and abstract, checked 2026-11-04.
+
 ## On-Device and Edge Deployment
 
 What can run locally under actual hardware limits?
